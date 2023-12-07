@@ -1,13 +1,13 @@
 {
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/*.code-search": true,
-        "**/*.js": true,
-        "**/dist": true,
-        "**/*.d.ts": true
-    }
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/*.js": true,
+    "**/dist": true,
+    "**/*.d.ts": true
+  }
 }

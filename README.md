@@ -31,6 +31,12 @@ $ docker build . -t snipstr-server
 
 The building process will take a few minutes.
 
+You can run the required services by running the following:
+
+```bash
+$ docker-compose up
+```
+
 ## Running the app
 
 ```bash
