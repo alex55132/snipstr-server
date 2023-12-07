@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: "postgres:15.3"
+    ports:
+      - "8000:5432"
+    environment:
+      POSTGRES_USER: snipstr
+      POSTGRES_PASSWORD: EXAMPLEPASSWORD
+  app:
+    image: "snipstr-test:latest"
+    ports:
+      - "8001:3000"
+    environment:
+       DATABASE_HOST: postgres
+       DATABASE_URL: postgresql://snipstr:EXAMPLEPASSWORD@postgres:5432/snipstr?schema=public
+    depends_on:
+      - postgres
+      
+networks:
+  default-network:
